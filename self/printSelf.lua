@@ -1,0 +1,1 @@
+local script = "local script = %s print(string.format(script, string.char(34) .. script .. string.char(34)))" print(string.format(script, string.char(34) .. script .. string.char(34)))
