@@ -10,7 +10,7 @@ public class Main
 		char q = 34;
 		char nl = 10;
 
-		System.out.println(c.format(nl, q + lua + q, q + py + q, q + cs + q, q + java + q, q + c + q));
+		System.out.printf(c, nl, q + lua + q, q + py + q, q + cs + q, q + java + q, q + c + q);
 	} 
 }
 
