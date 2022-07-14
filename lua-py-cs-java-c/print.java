@@ -13,4 +13,3 @@ public class Main
 		System.out.printf(c, nl, q + lua + q, q + py + q, q + cs + q, q + java + q, q + c + q);
 	} 
 }
-

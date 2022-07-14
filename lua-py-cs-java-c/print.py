@@ -1,4 +1,3 @@
-
 lua = "local lua = %s local py = %s local cs = %s local java = %s local c = %s local q = string.char(34) print(string.format(py, q .. lua .. q, q .. py .. q, q .. cs .. q, q .. java .. q, q .. c .. q))"
 py = "lua = %s; py = %s; cs = %s; java = %s; c = %s; q = chr(34); print(cs %% (q + lua + q, q + py + q, q + cs + q, q + java + q, q + c + q))"
 cs = "namespace Print {class Print {static void Main(string[] args) {string lua = %s; string py = %s; string cs = %s; string java = %s; string c = %s; char q = (char)34; System.Console.WriteLine(System.String.Format(java, q + lua + q, q + py + q, q + cs + q, q + java + q, q + c + q));}}}"
@@ -8,4 +7,3 @@ c = "#include <stdio.h>\\nint main() {char lua[] = %s; char py[] = %s; char cs[]
 q = chr(34)
 
 print(cs.format(q + lua + q, q + py + q, q + cs + q, q + java + q, q + c + q))
-
